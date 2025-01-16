@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>
+  My very first form
+  <link rel="stylesheet" href="styles.css">
+</title>
+<h1 id="title">Survey Form</h1>
+<p id="description">This is a Survey Form</p>
+</head>
+
+<body>
+  <form id="survey-form" method="post">
+    <label for="name" id="name-label">Name
+      <fieldset>
+        <input id="name" type="text" required placeholder="Input your name"/>
+    </label>
+    </fieldset>
+    <label for="Email" id="email-label">Email
+  <fieldset>
+  <input id="email" type="email" required placeholder="Enter your Email Address" />
+  </label>
+    </fieldset>
+    <label for="number" id="number-label">Number
+    <fieldset>
+      <input id="number" type="number" required min="0" max="1000" placeholder="Age"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>
+  <select id="dropdown">
+    <option value="">How did you hear about us?</option>
+    <option value="1">Facebook</option>
+    <option value="2">Google Ads</option>
+</select>
+
+<legend>What's your gender?</legend>
+
+<label for="male"> <Input id="male" type="radio" name="gender" class="inline" checked value="male"/>Male</label >
+
+<label for="female"> <input id="female" type="radio" name="gender" class="inline" value="female" />Female</label>
+
+<label for="other"><input id="other" name="gender" type="radio" value="Other" />Other</label>
+ </fieldset>
+   <fieldset>
+     <legend>What sport have you played?</legend>
+     <label for="basketball">
+       <input id="basketball" type="checkbox" name="sport" value="basketball" />Basketball</label>
+       <label for="volleyball"> <input id="volleyball" type="checkbox" name="sport" value="volleyball" />Volleyball</label>
+       <label for="billiard">
+         <input id="billiard" type="checkbox" name="sport" value="billiard" />Billiards
+       </label>
+   </fieldset>
+   <legend>Place your comment and suggestions here </legend>
+   <label for="comments"></label>
+<textarea id="comments" placeholder="I <3 freeCodeCamp"></textarea>
+<p></p>
+<button id="submit">Submit</button>
+
+  </form>
+</body>
+
+</html>
+
